@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %} Dashboard {% endblock %}
+
+{% block content %}
+
+<div class="container dashboard">
+    <div class="col-4 dashboard-box" id="dashboard-lastdays">
+        <h4>Finalizadas nos últimos 30 dias</h4>
+        <span>{{ tasksrecently }}</span>
+    </div>
+    <div class="col-4 dashboard-box" id="dashboard-done">
+        <h4>Tarefas finalizadas</h4>
+        <span>{{ tasksdone }}</span>
+    </div>
+    <div class="col-4 dashboard-box" id="dashboard-doing">
+        <h4>Tarefas em aberto</h4>
+        <span>{{ tasksdoing }}</span>
+    </div>
+</div>
+
+{% endblock %}
